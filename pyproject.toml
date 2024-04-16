@@ -13,6 +13,8 @@ scikit-learn = "^1.4.2"
 seaborn = "^0.13.2"
 matplotlib = "^3.8.4"
 colorama = "^0.4.6"
+catboost = "^1.2.3"
+xgboost = "^2.0.3"
 
 
 [tool.poetry.group.dev.dependencies]

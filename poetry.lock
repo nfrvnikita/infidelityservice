@@ -30,6 +30,52 @@ astroid = ["astroid (>=1,<2)", "astroid (>=2,<4)"]
 test = ["astroid (>=1,<2)", "astroid (>=2,<4)", "pytest"]
 
 [[package]]
+name = "catboost"
+version = "1.2.3"
+description = "CatBoost Python Package"
+optional = false
+python-versions = "*"
+files = [
+    {file = "catboost-1.2.3-cp310-cp310-macosx_11_0_universal2.whl", hash = "sha256:16dccd0922e4046aa36db6fb5f48503104f5b3c9c7bd256194dbf02ee1fabbf5"},
+    {file = "catboost-1.2.3-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:cdb78481880b1c07f003c00c2e0b817f7a312ab0e93da5520f8a09efb82adc75"},
+    {file = "catboost-1.2.3-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:647dd55dbf2808dcdd425131e4e279be0330fc6e442c196245d61bf44d742c54"},
+    {file = "catboost-1.2.3-cp310-cp310-win_amd64.whl", hash = "sha256:8365cb534da48f2dba12373a7e33aca6f9054b8214714d98175d1d6a8e8a221b"},
+    {file = "catboost-1.2.3-cp311-cp311-macosx_11_0_universal2.whl", hash = "sha256:649d19924db984930cd500faf862fd5b76698d9faa6e2350338d44d17261d783"},
+    {file = "catboost-1.2.3-cp311-cp311-manylinux2014_aarch64.whl", hash = "sha256:545e981506b02e6c716324089fc5201b57e5e30fb61929b0ac0b61af8290a9b1"},
+    {file = "catboost-1.2.3-cp311-cp311-manylinux2014_x86_64.whl", hash = "sha256:f8ad8cacf688f75a78324655a69a942309345960af2075b4618a4b723c95ba81"},
+    {file = "catboost-1.2.3-cp311-cp311-win_amd64.whl", hash = "sha256:d9cea396190d4b6072c0e9dced69a0a4b46accda5572b26962b3b29b6d1e9233"},
+    {file = "catboost-1.2.3-cp312-cp312-macosx_11_0_universal2.whl", hash = "sha256:7ea701141d12bb2e9ec348b4bb02be6b3188b6cd8832ae7b56a9bf98677a9128"},
+    {file = "catboost-1.2.3-cp312-cp312-manylinux2014_aarch64.whl", hash = "sha256:ec28140b7ad8663a68c05968c729263a7e8e604858a61fb6d9a190a9db025b26"},
+    {file = "catboost-1.2.3-cp312-cp312-manylinux2014_x86_64.whl", hash = "sha256:c73a85711260c48c881eff41f6183426eeee7f2e07118688ecafc8c32ab57eb3"},
+    {file = "catboost-1.2.3-cp312-cp312-win_amd64.whl", hash = "sha256:031c4a4e7160b6a965414dd60c9459fb8472c69a8156e80e16734dd0b068986e"},
+    {file = "catboost-1.2.3-cp37-cp37m-macosx_11_0_universal2.whl", hash = "sha256:b7c95c6ab5edccde2b847bac1dc990f9d26c79353ed52de348d3e228685f815e"},
+    {file = "catboost-1.2.3-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:69f24ed30a06c4a6d0f43203876edff3a09fe0487c201cfaace7338a286764a7"},
+    {file = "catboost-1.2.3-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:2b8a5ad81b6f4ae79067459a20b192a69066a5a1300d20e05b10f3af1092ab37"},
+    {file = "catboost-1.2.3-cp37-cp37m-win_amd64.whl", hash = "sha256:ea79008ad793a5090497020ed4afdbbc3cac71035483124aa43ca118cece659f"},
+    {file = "catboost-1.2.3-cp38-cp38-macosx_11_0_universal2.whl", hash = "sha256:5cb6be26e5c60b394482181f8e1392ae60d9583d0482f76a8c0cb75effc6da36"},
+    {file = "catboost-1.2.3-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:fff6cc83401a60666ba14507402e1d633e94531a520abc479b7d8a98470b9db4"},
+    {file = "catboost-1.2.3-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:e19ef50596486790e8fa49a927b0bce1a340a63c3ee897db0ce720bdb04500a3"},
+    {file = "catboost-1.2.3-cp38-cp38-win_amd64.whl", hash = "sha256:b0ac53dce6b9598bb0ec7144da360d455166e26859c50657cca79a4d19f04bc9"},
+    {file = "catboost-1.2.3-cp39-cp39-macosx_11_0_universal2.whl", hash = "sha256:37557e90e9c4185f41faff3c53e1bde52d926dea2feff6eda3d48d7c240ed726"},
+    {file = "catboost-1.2.3-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:9a8eb86e5c4ed7d8f5f14c47965b3d5b1918c926280e71e024d03c7652e2a279"},
+    {file = "catboost-1.2.3-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:a867deb1d0ff1a54feef91ab86bdb90f589dce1a7ba0da9ab1faf90eb72bde14"},
+    {file = "catboost-1.2.3-cp39-cp39-win_amd64.whl", hash = "sha256:78316a492d75089f77ea508ed009e54efe724120f549d6a2c782b8a4ccbf1256"},
+    {file = "catboost-1.2.3.tar.gz", hash = "sha256:72e141e3594975a7c08c787989b9b35d45b2beec13e37a62706a01b1037a1e44"},
+]
+
+[package.dependencies]
+graphviz = "*"
+matplotlib = "*"
+numpy = ">=1.16.0"
+pandas = ">=0.24"
+plotly = "*"
+scipy = "*"
+six = "*"
+
+[package.extras]
+widget = ["ipython", "ipywidgets (>=7.0,<9.0)", "traitlets"]
+
+[[package]]
 name = "cffi"
 version = "1.16.0"
 description = "Foreign Function Interface for Python calling C code."
@@ -319,6 +365,22 @@ type1 = ["xattr"]
 ufo = ["fs (>=2.2.0,<3)"]
 unicode = ["unicodedata2 (>=15.1.0)"]
 woff = ["brotli (>=1.0.1)", "brotlicffi (>=0.8.0)", "zopfli (>=0.1.4)"]
+
+[[package]]
+name = "graphviz"
+version = "0.20.3"
+description = "Simple Python interface for Graphviz"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "graphviz-0.20.3-py3-none-any.whl", hash = "sha256:81f848f2904515d8cd359cc611faba817598d2feaac4027b266aa3eda7b3dde5"},
+    {file = "graphviz-0.20.3.zip", hash = "sha256:09d6bc81e6a9fa392e7ba52135a9d49f1ed62526f96499325930e87ca1b5925d"},
+]
+
+[package.extras]
+dev = ["flake8", "pep8-naming", "tox (>=3)", "twine", "wheel"]
+docs = ["sphinx (>=5,<7)", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
+test = ["coverage", "pytest (>=7,<8.1)", "pytest-cov", "pytest-mock (>=3)"]
 
 [[package]]
 name = "ipykernel"
@@ -907,6 +969,21 @@ docs = ["furo (>=2023.9.10)", "proselint (>=0.13)", "sphinx (>=7.2.6)", "sphinx-
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4.3)", "pytest-cov (>=4.1)", "pytest-mock (>=3.12)"]
 
 [[package]]
+name = "plotly"
+version = "5.20.0"
+description = "An open-source, interactive data visualization library for Python"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "plotly-5.20.0-py3-none-any.whl", hash = "sha256:837a9c8aa90f2c0a2f0d747b82544d014dc2a2bdde967b5bb1da25b53932d1a9"},
+    {file = "plotly-5.20.0.tar.gz", hash = "sha256:bf901c805d22032cfa534b2ff7c5aa6b0659e037f19ec1e0cca7f585918b5c89"},
+]
+
+[package.dependencies]
+packaging = "*"
+tenacity = ">=6.2.0"
+
+[[package]]
 name = "prompt-toolkit"
 version = "3.0.43"
 description = "Library for building powerful interactive command lines in Python"
@@ -1297,6 +1374,20 @@ pure-eval = "*"
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
+name = "tenacity"
+version = "8.2.3"
+description = "Retry code until it succeeds"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tenacity-8.2.3-py3-none-any.whl", hash = "sha256:ce510e327a630c9e1beaf17d42e6ffacc88185044ad85cf74c0a8887c6a0f88c"},
+    {file = "tenacity-8.2.3.tar.gz", hash = "sha256:5398ef0d78e63f40007c1fb4c0bff96e1911394d2fa8d194f77619c05ff6cc8a"},
+]
+
+[package.extras]
+doc = ["reno", "sphinx", "tornado (>=4.5)"]
+
+[[package]]
 name = "threadpoolctl"
 version = "3.4.0"
 description = "threadpoolctl"
@@ -1375,7 +1466,34 @@ files = [
     {file = "wcwidth-0.2.13.tar.gz", hash = "sha256:72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"},
 ]
 
+[[package]]
+name = "xgboost"
+version = "2.0.3"
+description = "XGBoost Python Package"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "xgboost-2.0.3-py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.macosx_12_0_x86_64.whl", hash = "sha256:b21b2bb188b162c615fce468db93e3f995f3690e6184aadc7743b58466dc7f13"},
+    {file = "xgboost-2.0.3-py3-none-macosx_12_0_arm64.whl", hash = "sha256:722d5b9351dfdf61973490dfd28abd42844db1cc469d07ed9b0cde9d1ffcdb32"},
+    {file = "xgboost-2.0.3-py3-none-manylinux2014_aarch64.whl", hash = "sha256:2315a57b1883221e2f78dd514559aa9797e6c272d995d22e45495a04adac93cc"},
+    {file = "xgboost-2.0.3-py3-none-manylinux2014_x86_64.whl", hash = "sha256:30bd5f789fad467fd49e04e5d19e04238b931682c3951a514da5c2410b3bf59c"},
+    {file = "xgboost-2.0.3-py3-none-win_amd64.whl", hash = "sha256:462f131d7bfb1bc42f67c57fa5aa3e57d2b5755b1573a6e0d2c7e8895164e0fc"},
+    {file = "xgboost-2.0.3.tar.gz", hash = "sha256:505955b5d770f8217a049beecce79e04a93787371c06dfb4b2414fec9d496bf3"},
+]
+
+[package.dependencies]
+numpy = "*"
+scipy = "*"
+
+[package.extras]
+dask = ["dask", "distributed", "pandas"]
+datatable = ["datatable"]
+pandas = ["pandas"]
+plotting = ["graphviz", "matplotlib"]
+pyspark = ["cloudpickle", "pyspark", "scikit-learn"]
+scikit-learn = ["scikit-learn"]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "b8d91802d1b17d83d36753fa4025b33a14cba8b49b9088043d44c94ae886197c"
+content-hash = "00904d7c101e17a1df58ed6bc07f3cd2532cf3ff471eebcc2c14b7cd9cdd6f0a"
