@@ -1,3 +1,4 @@
+"""Py file for encoding features"""
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 
