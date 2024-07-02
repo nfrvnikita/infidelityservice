@@ -35,7 +35,10 @@ def tensors_data() -> tp.Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.T
     """Converts dataset into PyTorch tensors for training and validation.
 
     Returns:
-        tp.Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]: Tensors for training and validation.
+        tp.Tuple[torch.Tensor,
+                torch.Tensor,
+                torch.Tensor,
+                torch.Tensor]: Tensors for training and validation.
     """
     X_train, X_valid, y_train, y_valid = make_dataset(RAW_DATA_PATH)
 
